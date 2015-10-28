@@ -1,8 +1,16 @@
 # holidays_jp2aipo
 
+
+# Overview
+
+オープンソースグループウェアaipoに2050年までの祝日を定義させるphpです。
+
+
+# Description
+
 yamlファイルの祝日データ(https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml)
 をオープンソースのグループウェアであるaipoで利用するためにデータのフォーマットをするphpです。
-aipoの祝日定義のデータはpropertiesファイルによって定義されているため、フォーマット形式はyaml→propertiesとなっています。
+
 
 curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php
 
