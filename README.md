@@ -32,5 +32,7 @@ curl 7.37.0
 上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、properties形式に変換された出力の表示とその出力のpropertiesファイルの作成、記入が実行されます。
 
 
-## Licence
+## Lisence
 
+Copyright (c) [2015] [MasayaYoshino]
+This software is released under the MIT License, please see LICENSE.txt.
