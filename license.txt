@@ -8,7 +8,7 @@
 >>>>>>> 3de26a281b85882acd3b2f6239c6202a752b3094
 The MIT License (MIT)
 
-Copyright (c) <2015> <Masaya Yoshino>
+Copyright (c) <2015> <MasayaYoshino>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
