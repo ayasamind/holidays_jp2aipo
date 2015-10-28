@@ -3,7 +3,7 @@
 
 $data = file_get_contents("php://stdin");
 $array = yaml_parse($data);
-$fp = fopen("holidays.properties", 'w');
+$fp = fopen("/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.properties", 'w');
 foreach($array as $key => $value){
 
   $format = "%s,%s\n";
