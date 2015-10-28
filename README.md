@@ -26,21 +26,23 @@ curl 7.37.0
 
 ## Usage
 
+まず、phpを利用する前にシェル上で
+
+`echo >/任意のPATH/holidays_default.properties`
+
+を実行し、holidays_default.propertiesを作成してください。
+任意のPATHとは、あなたの使用するaipoのholidays_default.propertiesのPATHです。
+
+
+その後、この下のphpをそのPATH上で以下のように実行してください。
+
 
 `curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php`
 
+
 上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、properties形式に変換された出力が表示されます。
 それと同時にその出力がaipoのholidays_default.propertiesファイルに上書きされます。
-holidays_default.propertiesの場所は/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.propertiesに設定してあります。
-もしaipo上の祝日定義ファイルの場所を変更している場合は、スクリプトの
 
-`$fp = fopen("/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.properties", 'w');`
-
-を
-
-`$fp = fopen("/任意のPATH/holidays_default.properties", 'w');`
-
-に書き換えてご利用ください。
 
 
 ## Lisence
