@@ -32,7 +32,7 @@ curl 7.37.0
 上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、properties形式に変換された出力が表示されます。
 それと同時にその出力がaipoのholidays_default.propertiesファイルに上書きされます。
 holidays_default.propertiesの場所は/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.propertiesに設定してあります。
-もしaipo上の祝日定義ファイルの場所が異なる場合は、スクリプトの
+もしaipo上の祝日定義ファイルの場所を変更している場合は、スクリプトの
 
 `$fp = fopen("/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.properties", 'w');`
 
