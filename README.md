@@ -9,7 +9,8 @@
 ## Description
 
 
-1970年~2050年の祝日を記述したyamlファイル(https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml)
+1970年~2050年の祝日を記述したyamlファイル
+<https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml>
 をオープンソースのグループウェアであるaipoで利用するためにaipoの祝日定義ファイルである、propertiesファイルに変換するphpです。
 
 yamlファイルはaipoで使用するために(/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.properties)
