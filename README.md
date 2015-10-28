@@ -26,23 +26,14 @@ curl 7.37.0
 
 ## Usage
 
-まず、phpを利用する前にシェル上で
 
-`echo >/任意のPATH/holidays_default.properties`
+`curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php`> /任意のPATH/holidays_default.properties
 
-を実行し、holidays_default.propertiesを作成してください。
-任意のPATHとは、あなたの使用するaipoのholidays_default.propertiesのPATHです。
+`（任意のPATHにはあなたのaipo上のholidays_default.propertiesのPATHを入力してください)`
 
 
-その後、この下のphpをそのPATH上で以下のように実行してください。
-
-
-`curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php`
-
-
-上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、properties形式に変換された出力が表示されます。
-それと同時にその出力がaipoのholidays_default.propertiesファイルに上書きされます。
-
+上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、出力がproperties形式に変換されます。
+そしてリダイレクト(>)によってその出力があなたが入力したPATH上のholidays_default.propertiesに上書きされます。
 
 
 ## Lisence
