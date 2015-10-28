@@ -8,13 +8,26 @@
 
 ## Description
 
-yamlファイルの祝日データ(https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml)
-をオープンソースのグループウェアであるaipoで利用するためにデータのフォーマットをするphpです。
+
+1970年~2050年の祝日を記述したyamlファイル(https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml)
+をオープンソースのグループウェアであるaipoで利用するためにaipoの祝日定義ファイルである、propertiesファイルに変換するphpです。
+
+yamlファイルはaipoで使用するために(/usr/local/aipo/tomcat/webapps/aipo/WEB-INF/conf/holidays_default.properties)
+にholidays_default.propertiesとしてデータが上書きされます。
+
+
+## Requirement
+
+curl 7.37.0
+
+
+## Usage
+
 
 `curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php`
 
 上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、properties形式に変換された出力の表示とその出力のpropertiesファイルの作成、記入が実行されます。
 
-curlからパイプでつなぐため、curlをインストールしていることが必要です。
-実行環境のcurlのバージョンはcurl 7.37.0です。
+
+## Licence
 
