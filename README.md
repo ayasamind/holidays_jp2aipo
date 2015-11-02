@@ -27,7 +27,7 @@ curl 7.37.0
 ## Usage
 
 
-`curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php`> /任意のPATH/holidays_default.properties
+`curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php> /任意のPATH/holidays_default.properties`
 
 `（任意のPATHにはあなたのaipo上のholidays_default.propertiesのPATHを入力してください)`
 
