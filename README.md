@@ -27,13 +27,14 @@ curl 7.37.0
 ## Usage
 
 
-`curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php> /任意のPATH/holidays_default.properties`
+`curl -L https://raw.githubusercontent.com/k1LoW/holiday_jp/master/holidays.yml | php change.php> /任意のPATH/holidays_default.properties`| chmod 755 holidays_default.properties
 
 `（任意のPATHにはあなたのaipo上のholidays_default.propertiesのPATHを入力してください)`
 
 
 上記のようにcurlコマンドによってyamlファイルを取り出し、同時にパイプでこのphpを実行することによって、php側でyamlの標準入力を受け取り、出力がproperties形式に変換されます。
 そしてリダイレクト(>)によってその出力があなたが入力したPATH上のholidays_default.propertiesに上書きされます。
+またcronを使って自動更新を行うために、chmodコマンドで実行権限を付与します。
 
 
 ## Lisence
